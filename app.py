@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from google.cloud import dialogflow
-import os,json
-from google.oauth2 import service_account 
+import os 
 
 app = Flask(__name__)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "my-chatbot-key.json"
