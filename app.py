@@ -3,20 +3,25 @@ from google.cloud import dialogflow
 import os,json
 from google.oauth2 import service_account 
 
+app = Flask(__name__)
+# Path to store the credentials file temporarily
+CREDENTIALS_PATH = "/tmp/my-chatbot-key.json"  # /tmp is writable in Render
+
 # Read the JSON from the environment variable
 json_str = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 if json_str is None:
     raise RuntimeError("GOOGLE_APPLICATION_CREDENTIALS is not set in the environment.")
 
-# Convert JSON string into a dictionary
-service_account_info = json.loads(json_str)
+# Write JSON string to a temporary file
+with open(CREDENTIALS_PATH, "w") as f:
+    f.write(json_str)
+
+# Set GOOGLE_APPLICATION_CREDENTIALS to the file path
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = CREDENTIALS_PATH
 
 # Create credentials from the JSON
-credentials = service_account.Credentials.from_service_account_info(service_account_info)
-
-app = Flask(__name__)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "my-chatbot-key.json"
+credentials = service_account.Credentials.from_service_account_file(CREDENTIALS_PATH)
 
 def detect_intent(session_id, text):
     """Send user text to Dialogflow and get a response."""
