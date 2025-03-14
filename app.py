@@ -1,6 +1,19 @@
 from flask import Flask, render_template, request, jsonify
 from google.cloud import dialogflow
-import os
+import os,json
+from google.oauth2 import service_account 
+
+# Read the JSON from the environment variable
+json_str = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
+if json_str is None:
+    raise RuntimeError("GOOGLE_APPLICATION_CREDENTIALS is not set in the environment.")
+
+# Convert JSON string into a dictionary
+service_account_info = json.loads(json_str)
+
+# Create credentials from the JSON
+credentials = service_account.Credentials.from_service_account_info(service_account_info)
 
 app = Flask(__name__)
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "my-chatbot-key.json"
