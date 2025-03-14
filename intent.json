@@ -1,0 +1,458 @@
+{
+    "intents": [
+      {
+        "name": "admission_process",
+        "trainingPhrases": [
+          "How can I apply for admission?",
+          "What is the admission process?",
+          "How do I get admission?",
+          "Tell me the steps for admission."
+        ],
+        "responses": [
+          "To apply for admission, fill out the online application form on our website, submit the required documents, and pay the application fee. Would you like the application link?"
+        ],
+        "context": ["admission_info"]
+      },
+      {
+        "name": "course_details",
+        "trainingPhrases": [
+          "What courses are available?",
+          "Do you offer engineering courses?",
+          "Which programs do you have?",
+          "Tell me about the courses."
+        ],
+        "responses": [
+          "We offer various undergraduate and postgraduate courses, including B.Tech, MBA, BBA, and more. Would you like a course brochure?"
+        ],
+        "context": ["course_info"]
+      },
+      {
+        "name": "fee_structure",
+        "trainingPhrases": [
+          "What is the fee for B.Tech?",
+          "How much does MBA cost?",
+          "Tell me the fee details.",
+          "What are the tuition fees?"
+        ],
+        "responses": [
+          "The tuition fee for B.Tech is approximately ₹1,00,000 per year. Fees may vary based on scholarships. Would you like details on scholarships or installment options?"
+        ],
+        "context": ["fees_info"]
+      },
+      {
+        "name": "scholarship_info",
+        "trainingPhrases": [
+          "Are there any scholarships?",
+          "Do you provide financial aid?",
+          "What are the eligibility criteria for scholarships?"
+        ],
+        "responses": [
+          "Yes, we offer merit-based and need-based scholarships. Eligibility depends on academic performance and entrance exam scores. Do you want to apply?"
+        ],
+        "context": ["scholarship_details"]
+      },
+      {
+        "name": "placement_info",
+        "trainingPhrases": [
+          "What are the placement opportunities?",
+          "Do you have campus placements?",
+          "Which companies visit for placements?"
+        ],
+        "responses": [
+          "We have a strong placement cell with recruiters like TCS, Infosys, and Wipro. The average package is ₹6 LPA. Would you like the placement report?"
+        ],
+        "context": ["career_opportunities"]
+      },
+    {
+        "name": "hostel_accommodation",
+        "trainingPhrases": [
+            "Do you provide hostel facilities?",
+            "What are the hostel charges?",
+            "Tell me about the hostel rooms."
+        ],
+        "responses": [
+            "Yes, we provide hostel facilities with modern amenities. The annual fee ranges from \u20b950,000 to \u20b980,000. Would you like a virtual tour?"
+        ],
+        "context": [
+            "accommodation_info"
+        ]
+    },
+    {
+        "name": "internship_info",
+        "trainingPhrases": [
+            "Do you provide internships?",
+            "Are there any internship opportunities?",
+            "How can I apply for an internship?"
+        ],
+        "responses": [
+            "We offer internship programs in collaboration with top companies. Students can apply after the second year. Do you want details on companies offering internships?"
+        ],
+        "context": [
+            "internship_details"
+        ]
+    },
+    {
+        "name": "entrance_exam",
+        "trainingPhrases": [
+            "Do I need to give an entrance exam?",
+            "Which exams are accepted for admission?",
+            "What are the cutoff scores?"
+        ],
+        "responses": [
+            "We accept entrance exams like JEE, CAT, and our internal test. Required scores vary by course. Do you need preparation tips?"
+        ],
+        "context": [
+            "exam_info"
+        ]
+    },
+    {
+        "name": "admission_deadlines",
+        "trainingPhrases": [
+            "What is the last date to apply?",
+            "When is the admission deadline?",
+            "Tell me about the admission timeline."
+        ],
+        "responses": [
+            "The last date to apply for admissions is June 30. Make sure to complete your application before the deadline. Do you need help with the application process?"
+        ],
+        "context": [
+            "deadline_info"
+        ]
+    },
+    {
+      "name": "contact_info",
+      "contexts": [
+          "contact_details"
+      ],
+      "trainingPhrases": [
+          "How can I contact the admission office?",
+          "What is the college's email ID?",
+          "Give me the contact details."
+      ],
+      "responses": [
+          "You can contact our admission office at admissions@college.edu or call +91-XXXXXXXXXX. Would you like to schedule a call?"
+      ]
+  },
+  {
+      "name": "campus_facilities",
+      "contexts": [
+          "facilities_info"
+      ],
+      "trainingPhrases": [
+          "What facilities does the college have?",
+          "Is there a library on campus?",
+          "Tell me about the campus infrastructure."
+      ],
+      "responses": [
+          "Our campus has modern classrooms, a library, sports facilities, labs, and a cafeteria. Would you like a campus tour?"
+      ]
+  },
+  {
+      "name": "exam_results",
+      "contexts": [
+          "academic_info"
+      ],
+      "trainingPhrases": [
+          "When will the semester exams start?",
+          "How can I check my results?",
+          "Tell me about the exam schedule."
+      ],
+      "responses": [
+          "Semester exams usually start in December and May. You can check your results on the student portal. Do you need login help?"
+      ]
+  },
+  {
+      "name": "events_workshops",
+      "contexts": [
+          "event_updates"
+      ],
+      "trainingPhrases": [
+          "Are there any upcoming events?",
+          "Do you have any workshops on AI?",
+          "Tell me about college events."
+      ],
+      "responses": [
+          "Yes! We have a tech fest and an AI workshop next month. Would you like to register?"
+      ]
+  },
+  {
+      "name": "library_timings",
+      "contexts": [
+          "library_info"
+      ],
+      "trainingPhrases": [
+          "What are the library timings?",
+          "Is the library open on weekends?",
+          "Tell me the working hours of the library."
+      ],
+      "responses": [
+          "The library is open from 7 AM to 5 PM on weekdays and 9 AM to 4 PM on weekends. Do you need assistance with book reservations?"
+      ]
+  },
+  {
+    "name": "transfer_students_acceptance",
+    "contexts": [
+        "transfer_info"
+    ],
+    "trainingPhrases": [
+        "Do you accept transfer students?",
+        "Can I transfer from another university?",
+        "What are the requirements for transfer students?"
+    ],
+    "responses": [
+        "Yes, we accept transfer students. You need to provide previous transcripts and meet the eligibility criteria. Would you like more details?"
+    ]
+},
+{
+    "name": "sports_facilities",
+    "contexts": [
+        "sports_info"
+    ],
+    "trainingPhrases": [
+        "What sports facilities are available?",
+        "Does the college have a gym?",
+        "Are there any sports teams in college?"
+    ],
+    "responses": [
+        "Our college has a gym, football field, basketball court, and indoor sports facilities. Would you like to join a sports club?"
+    ]
+},
+{
+    "name": "online_courses",
+    "contexts": [
+        "online_courses_info"
+    ],
+    "trainingPhrases": [
+        "Do you offer online courses?",
+        "Can I take classes online?",
+        "What online learning options are available?"
+    ],
+    "responses": [
+        "Yes, we offer online courses in various subjects. You can check the online learning portal for details. Would you like the course list?"
+    ]
+},
+{
+    "name": "student_population",
+    "contexts": [
+        "student_population_info"
+    ],
+    "trainingPhrases": [
+        "How many students attend this college?",
+        "What is the student population?",
+        "How big is the student body?"
+    ],
+    "responses": [
+        "Our college has around 10,000 students enrolled across various programs. Would you like details on specific departments?"
+    ]
+},
+{
+    "name": "average_class_size",
+    "contexts": [
+        "class_size_info"
+    ],
+    "trainingPhrases": [
+        "What is the average class size?",
+        "How many students are in each class?",
+        "Are class sizes small or large?"
+    ],
+    "responses": [
+        "The average class size is about 30 students, ensuring personalized attention. Do you want details on specific courses?"
+    ]
+},
+{
+    "name": "competitions",
+    "contexts": [
+        "competition_details"
+    ],
+    "trainingPhrases": [
+        "Are there any competitions for students?",
+        "What kind of contests does the college have?",
+        "Tell me about academic and sports competitions."
+    ],
+    "responses": [
+        "We organize various academic, sports, and technical competitions. You can check the student portal for upcoming contests. Do you need more details?"
+    ]
+},
+{
+    "name": "cultural_events",
+    "contexts": [
+        "event_updates"
+    ],
+    "trainingPhrases": [
+        "Are there any cultural events in college?",
+        "What are the upcoming cultural fests?",
+        "Tell me about college fests."
+    ],
+    "responses": [
+        "Yes, our college hosts cultural fests, dance competitions, and music nights. Would you like to participate in an event?"
+    ]
+},
+{
+    "name": "industrial_visits",
+    "contexts": [
+        "industrial_tours"
+    ],
+    "trainingPhrases": [
+        "Do you organize industrial visits?",
+        "Are there any company visits for students?",
+        "Tell me about industry exposure programs."
+    ],
+    "responses": [
+        "Yes, we arrange industrial visits for students to gain real-world experience. Upcoming visits are announced in the student portal. Would you like to register?"
+    ]
+},{
+    "name": "picnic",
+    "contexts": [
+        "student_activities"
+    ],
+    "trainingPhrases": [
+        "Does the college organize picnics?",
+        "Are there any trips or outings for students?",
+        "Tell me about student trips."
+    ],
+    "responses": [
+        "Yes, the college organizes trips and picnics for students to relax and socialize. Upcoming events are updated on the college website. Would you like to know more?"
+    ]
+},
+{
+    "name": "practical_labs",
+    "contexts": [
+        "lab_facilities"
+    ],
+    "trainingPhrases": [
+        "What are the lab facilities available?",
+        "Are there science labs in college?",
+        "Tell me about the practical labs."
+    ],
+    "responses": [
+        "Our college has well-equipped physics, chemistry, and computer labs for practical learning. Would you like details on lab timings?"
+    ]
+},
+{
+    "name": "semester_end_exam",
+    "contexts": [
+        "exam_schedule"
+    ],
+    "trainingPhrases": [
+        "When are the semester exams held?",
+        "What is the schedule for term-end exams?",
+        "Tell me about the final exams."
+    ],
+    "responses": [
+        "Semester-end exams are conducted in December and May. The exact schedule is available on the student portal. Do you need help accessing it?"
+    ]
+},
+{
+    "name": "bridge_courses",
+    "contexts": [
+        "course_preparation"
+    ],
+    "trainingPhrases": [
+        "Are there any bridge courses available before the semester starts?",
+        "Do you offer preparatory courses before the main semester?",
+        "Can I take a refresher course before my classes begin?"
+    ],
+    "responses": [
+        "Yes, we offer bridge courses in subjects like Math, English, and Programming to help students prepare before the semester starts."
+    ]
+},
+{
+    "name": "change_major",
+    "contexts": [
+        "academic_changes"
+    ],
+    "trainingPhrases": [
+        "How do I change my major or course?",
+        "Can I switch my major after admission?",
+        "What is the process to change my course?"
+    ],
+    "responses": [
+        "To change your major or course, you need to submit a request to the academic office. The approval depends on course availability and eligibility criteria."
+    ]
+},
+{
+    "name": "hostel_mandatory",
+    "contexts": [
+        "hostel_info"
+    ],
+    "trainingPhrases": [
+        "Is hostel accommodation mandatory for first-year students?",
+        "Do first-year students have to stay in the hostel?",
+        "Can I stay outside the college during my first year?"
+    ],
+    "responses": [
+        "Hostel accommodation is optional for first-year students, but highly recommended for convenience and safety."
+    ]
+},
+{
+    "name": "hostel_rules",
+    "contexts": [
+        "hostel_regulations"
+    ],
+    "trainingPhrases": [
+        "What are the hostel rules and regulations?",
+        "Tell me about the hostel guidelines.",
+        "What rules do I need to follow in the hostel?"
+    ],
+    "responses": [
+        "The hostel has rules regarding curfew timings, guest policies, and cleanliness. A detailed rulebook is provided upon admission."
+    ]
+},
+{
+    "name": "installment_plans",
+    "contexts": [
+        "fee_payment"
+    ],
+    "trainingPhrases": [
+        "Are there any installment plans for tuition fees?",
+        "Can I pay my fees in parts?",
+        "Is there a flexible payment option for tuition?"
+    ],
+    "responses": [
+        "Yes, we offer installment plans for tuition fees. You can contact the finance office for details on payment options."
+    ]
+},
+{
+    "name": "part_time_classes",
+    "contexts": [
+        "course_schedule"
+    ],
+    "trainingPhrases": [
+        "Are there any part-time or evening classes?",
+        "Does the college offer night classes?",
+        "Can I take classes in the evening?"
+    ],
+    "responses": [
+        "Yes, we offer part-time and evening classes for select courses. Please check with the administration office for course availability."
+    ]
+},
+{
+    "name": "refund_policy",
+    "contexts": [
+        "fee_refund"
+    ],
+    "trainingPhrases": [
+        "What is the refund policy for tuition fees?",
+        "Can I get a refund if I withdraw from the college?",
+        "How does the tuition refund process work?"
+    ],
+    "responses": [
+        "The refund policy varies based on the time of withdrawal. Please refer to the official college guidelines or contact the finance office for details."
+    ]
+},
+{
+    "name": "popular_courses",
+    "contexts": [
+        "course_info"
+    ],
+    "trainingPhrases": [
+        "What are the most popular courses at this college?",
+        "Which courses are most in demand?",
+        "What are the best programs offered here?"
+    ],
+    "responses": [
+        "Our most popular courses include Computer Science, Business Administration, Mechanical Engineering, and Psychology. Let me know if you need details on any specific course!"
+    ]
+}
+    ]
+}
