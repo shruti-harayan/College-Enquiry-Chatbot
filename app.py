@@ -4,23 +4,24 @@ import os,json
 from google.oauth2 import service_account 
 
 app = Flask(__name__)
-# Path to store the credentials file temporarily
-CREDENTIALS_PATH = "/tmp/my-chatbot-key.json"  # /tmp is writable in Render
 
-# Read the JSON from the environment variable
+# Store credentials in a temporary file
+CREDENTIALS_PATH = "/tmp/my-chatbot-key.json"  # ✅ Correct writable path
+
+# Read JSON from the environment variable
 json_str = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 if json_str is None:
     raise RuntimeError("GOOGLE_APPLICATION_CREDENTIALS is not set in the environment.")
 
-# Write JSON string to a temporary file
+# ✅ Write JSON to a file
 with open(CREDENTIALS_PATH, "w") as f:
     f.write(json_str)
 
-# Set GOOGLE_APPLICATION_CREDENTIALS to the file path
+# ✅ Set GOOGLE_APPLICATION_CREDENTIALS to the file path
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = CREDENTIALS_PATH
 
-# Create credentials from the JSON
+# ✅ Load credentials from the file
 credentials = service_account.Credentials.from_service_account_file(CREDENTIALS_PATH)
 
 def detect_intent(session_id, text):
