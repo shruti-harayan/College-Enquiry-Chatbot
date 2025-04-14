@@ -319,7 +319,7 @@ document.getElementById("send").addEventListener("click", async function() {
         const response = await fetch("https://college-chatbot-production.up.railway.app/chatbot", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ text: userInput })
+            body: JSON.stringify({ text: userInput, session_id: "user123" })
         });
         
         const data = await response.json();
