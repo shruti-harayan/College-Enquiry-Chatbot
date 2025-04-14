@@ -316,7 +316,7 @@ document.getElementById("send").addEventListener("click", async function() {
     document.getElementById("chatbox").appendChild(userMsg);
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/chatbot", {
+        const response = await fetch("https://college-chatbot-production.up.railway.app/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text: userInput })
