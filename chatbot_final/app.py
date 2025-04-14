@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from google.cloud import dialogflow
-import os
+import os,json
+from google.oauth2 import service_account
 
 app = Flask(__name__)
 creds_json = json.loads(os.getenv("GOOGLE_APPLICATION_CREDENTIALS_JSON"))
@@ -45,4 +46,6 @@ def chatbot():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+    
