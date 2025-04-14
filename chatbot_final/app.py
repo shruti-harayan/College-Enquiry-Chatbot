@@ -3,7 +3,9 @@ from google.cloud import dialogflow
 import os
 
 app = Flask(__name__)
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "my-chatbot-key.json"
+creds_json = json.loads(os.getenv("GOOGLE_APPLICATION_CREDENTIALS_JSON"))
+credentials = service_account.Credentials.from_service_account_info(creds_json)
+session_client = dialogflow.SessionsClient(credentials=credentials)
 
 def detect_intent(session_id, text):
     """Send user text to Dialogflow and get a response."""
