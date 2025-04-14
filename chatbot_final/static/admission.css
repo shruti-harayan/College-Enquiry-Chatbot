@@ -1,0 +1,390 @@
+/* Admission Page Styles */
+
+/* Page Header - Same as About Page */
+.page-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    font-size: 14px;
+}
+
+.breadcrumb-item a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+    margin: 0 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb-item.active {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Admission Banner */
+.admission-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-apply {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #8a4338;
+    color: var(--white);
+}
+
+/* Admission Process */
+.admission-process {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step {
+    display: flex;
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-right: 20px;
+    line-height: 1;
+}
+
+.step-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Required Documents */
+.required-documents {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+}
+
+.documents-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.document-list {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.document-list h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.document-list h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.document-list ul {
+    padding-left: 20px;
+}
+
+.document-list ul li {
+    margin-bottom: 10px;
+    position: relative;
+    list-style-type: disc;
+    padding-left: 5px;
+}
+
+/* Fee Structure */
+.fee-structure {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 40px;
+}
+
+.fee-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.fee-table th, .fee-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.fee-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.fee-table tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.fee-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.fee-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.fee-note p {
+    margin-bottom: 5px;
+}
+
+/* Online Portal */
+.online-portal {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+}
+
+.portal-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.portal-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.portal-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.portal-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.portal-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.portal-features li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.portal-features li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.btn-portal {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-portal:hover {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+.portal-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.portal-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact for Admission */
+.admission-contact {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.contact-info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-card {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.contact-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portal-content {
+        flex-direction: column;
+    }
+
+    .portal-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content h2 {
+        font-size: 28px;
+    }
+
+    .contact-info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .documents-content {
+        flex-direction: column;
+    }
+
+    .contact-info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content h2 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+}

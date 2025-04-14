@@ -1,0 +1,14 @@
+{
+    "name": "part_time_classes",
+    "contexts": [
+        "course_schedule"
+    ],
+    "trainingPhrases": [
+        "Are there any part-time or evening classes?",
+        "Does the college offer night classes?",
+        "Can I take classes in the evening?"
+    ],
+    "responses": [
+        "Yes, we offer part-time and evening classes for select courses. Please check with the administration office for course availability."
+    ]
+}

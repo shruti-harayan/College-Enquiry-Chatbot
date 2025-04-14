@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramanand Arya D.A.V College</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> 9702291084</span>
+                <span><i class="fas fa-envelope"></i> info@radav.org</span>
+                <span><a href="#"><i class="fas fa-clock"></i> Examination Time Table 2022-23</a></span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Logo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='logo.jpg') }}" alt="RADAV College Logo" class="logo">
+                <div class="college-info">
+                    <h1>UTTARI BHARAT SABHA'S</h1>
+                    <h2>RAMANAND ARYA D.A.V COLLEGE</h2>
+                    <p>BHANDUP (EAST), MUMBAI - 400042</p>
+                    <p class="accent">NAAC ACCREDITED 'A' GRADE</p>
+                    <p class="accent">BEST COLLEGE AWARD BY UNIVERSITY OF MUMBAI</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#">ABOUT <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Message from Chairman Desk</a>
+                        <a href="#">Management Council</a>
+                        <a href="#">Faculty</a>
+                        <a href="#">Mission & Vision</a>
+                        <a href="#">Code of Conduct</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">STATUTORY BODY <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Board of Studies</a>
+                        <a href="#">Governing Body</a>
+                        <a href="#">Academic Council</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">PROGRAMS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Junior College</a>
+                        <a href="#">Under Graduate</a>
+                        <a href="#">Post Graduate</a>
+                        <a href="#">YCMOU Study Centre</a>
+                        <a href="#">Add on Courses</a>
+                        <a href="#">Research Cell</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="admission.html">ADMISSION <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Prospectus</a>
+                        <a href="#">Fee structure</a>
+                        <a href="#">Admission Form</a>
+                        <a href="#">Scholarship Form</a>
+                        <a href="#">Fees Outstanding</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">EXAMINATION <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Examination Committee Member</a>
+                        <a href="#">Rules for the Revaluation</a>
+                        <a href="#">Unfair means at Examinations</a>
+                        <a href="#">Notice of UG</a>
+                        <a href="#">Notice of PG</a>
+                        <a href="#">Examination Timetable</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">RESULT <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">UG Result</a>
+                        <a href="#">PG Result</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">LIBRARY <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">N-List</a>
+                        <a href="#">Journal</a>
+                        <a href="#">E-Books</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">IQAC <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Academic Audit Commitee</a>
+                        <a href="#">IQAC Minutes 2022-23</a>
+                        <a href="#">AQAR</a>
+                        <a href="#">Best practices</a>
+                        <a href="#">IQAC</a>
+                        <a href="#">Academic Calender</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">STUDENTS CORNER <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Student Council</a>
+                        <a href="#">Student Council List</a>
+                        <a href="#">Grievance committee Cell</a>
+                        <a href="#">Students Welfare Committee</a>
+                        <a href="#">Cells</a>
+                        <a href="#">Committee</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#">UPDATES <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Announcement</a>
+                        <a href="#">Latest News</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-slider" id="heroSlider">
+            <div class="slide active">
+                <img src="{{ url_for('static', filename='hero1.jpg') }}" alt="Award Ceremony">
+                <div class="slide-caption">
+                    <h2>AT THE HANDS OF HON'BLE HIGHER EDUCATION MINISTER, GOVT. OF MAHARASHTRA, SHRI UDAY SAWANT</h2>
+                </div>
+            </div>
+            <!-- More slides will be added dynamically by JavaScript -->
+        </div>
+    
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    
+
+    <!-- Quick Access Buttons -->
+    <section class="quick-access">
+        <div class="container">
+            <a href="#" class="quick-btn admission">
+                <i class="fas fa-graduation-cap"></i> Online Admission Portal
+            </a>
+            <a href="#" class="quick-btn app">
+                <i class="fas fa-mobile-alt"></i> RADAV Student Mobile Application
+            </a>
+        </div>
+    </section>
+
+    <!-- Notice Board Section -->
+    <section class="notice-board">
+        <div class="container">
+            <h2 class="section-title">Notice Board</h2>
+            <div class="notice-columns">
+                <div class="notice-column">
+                    <h3>General Notice</h3>
+                    <ul>
+                        <li><a href="#">Document Verification</a></li>
+                        <li><a href="#">Prospectus 2022-23</a></li>
+                        <li><a href="#">Rajshri Chhatrapati Sahu Maharaj Shikshan Shulkh Shishyavruti Scheme (E.B.C
+                                Scholarship) 2022-23</a></li>
+                        <li><a href="#">NOTICE FOR OLD STUDENTS (Admission prior to year 2011)</a></li>
+                    </ul>
+                </div>
+                <div class="notice-column">
+                    <h3>Examination Notice</h3>
+                    <ul>
+                        <li><a href="#">HSC Board Exam fees Return Notice</a></li>
+                        <li><a href="#">Examination Time Table 2022/23</a></li>
+                        <li><a href="#">B.Com SEM-2, SEM-4 & SEM-6 REGULAR & ATKT-TIME TABLE-APRIL-2021</a></li>
+                    </ul>
+                </div>
+                <div class="notice-column">
+                    <h3>News & Events</h3>
+                    <ul>
+                        <li><a href="#">Selected Candidate List for Ph.D. In Commerce & Management 2022-23</a></li>
+                        <li><a href="#">Rajshri Chhatrapati Sahu Maharaj Shikshan Shulkh Shishyavruti Scheme (E.B.C
+                                Scholarship) 2022-23</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <h2 class="section-title">Welcome & Greetings!</h2>
+            <div class="welcome-content">
+                <p>Education is not the amount of information that is put into young brain and run riot there,
+                    undigested all our life. We must have life building, man making, character creating and assimilation
+                    of ideas. The end and aim of all training is to make man good. The training, by which the expression
+                    of will is brought under control and becomes fruitful, is called education.</p>
+                <p>Ramanand Arya D.A.V. Junior College of Science and Commerce and Ramanand Arya D.A.V. Degree College
+                    offering B.Com, B.Com (Banking and Insurance), B.Com (Accounting & Finance), M.Com, B.M.S.,
+                    B.Sc.(I.T) and B.M.M. Courses. The total strength of these institutions is about 13000 students.</p>
+                <div class="read-more-btn">
+                    <a href="about.html" class="btn">Read More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3 class="counter">0+</h3>
+                    <p>Courses Available</p>
+                </div>
+                <div class="stat-box">
+                    <h3 class="counter">0+</h3>
+                    <p>Students Passed</p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3 class="counter">0%</h3>
+                    <p>Positive Feedback</p>
+                </div>
+                <div class="stat-box">
+                    <h3 class="counter">0+</h3>
+                    <p>Awards won</p>
+                </div>
+            </div>
+            <div class="naac-values">
+                <h3>NAAC CORE VALUES</h3>
+                <ul>
+                    <li>Contributing to National Development</li>
+                    <li>Fostering Global Competencies among students</li>
+                    <li>Inculcating a value system among students</li>
+                    <li>Promoting the use of technology</li>
+                    <li>Quest for excellence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Chatbot -->
+    <div class="chatbot-icon" onclick="toggleChat()">
+        <img src="https://cdn-icons-png.flaticon.com/512/2590/2590528.png" alt="Chatbot">
+    </div>
+
+    <div class="chatbot-dialog" id="chatDialog">
+        <div class="chatbot-header">
+            <div class="bot-identity">
+                <span class="bot-icon">🤖</span>
+                <h3>College Enquiry Assistant</h3>
+            </div>
+            <span class="close-btn" onclick="toggleChat()">×</span>
+        </div>
+        <div class="chat-container">
+            <div id="chatbox" class="chat-messages">
+                <div class="welcome-message">
+                    <p>Hi there! 👋 I'm DAVbot, your virtual college assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask about admissions, courses, or events...">
+                <button id="send" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="{{ url_for('static', filename='logo.jpg') }}" alt="RADAV College Logo"
+                        class="footer-logo">
+                    <p>Ramanand Arya D.A.V College</p>
+                    <p>Bhandup (East), Mumbai - 400042</p>
+                </div>
+                <div class="footer-center">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h3>Connect With Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright © 2024-25 Ramanand Arya DAV College</p>
+        </div>
+    </footer>
+
+    <script>
+        const slideUrls = {
+            hero1: "{{ url_for('static', filename='hero1.jpg') }}",
+            hero2: "{{ url_for('static', filename='hero2.jpg') }}",
+            hero3: "{{ url_for('static', filename='hero3.jpg') }}"
+        };
+    </script>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

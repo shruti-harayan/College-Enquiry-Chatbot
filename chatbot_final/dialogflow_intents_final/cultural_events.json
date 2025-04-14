@@ -1,0 +1,14 @@
+{
+    "name": "cultural_events",
+    "contexts": [
+        "event_updates"
+    ],
+    "trainingPhrases": [
+        "Are there any cultural events in college?",
+        "What are the upcoming cultural fests?",
+        "Tell me about college fests."
+    ],
+    "responses": [
+        "Yes, our college hosts cultural fests, dance competitions, and music nights. Would you like to participate in an event?"
+    ]
+}

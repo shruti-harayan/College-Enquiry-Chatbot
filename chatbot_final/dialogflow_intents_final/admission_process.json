@@ -1,0 +1,47 @@
+{
+    "name": "admission_process",
+    "auto": true,
+    "contexts": [
+        "admission_info"
+    ],
+    "responses": [
+        {
+            "messages": [
+                {
+                    "speech": "To apply for admission, fill out the online application form on our website, submit the required documents, and pay the application fee. Would you like the application link?",
+                    "type": 0
+                }
+            ]
+        }
+    ],
+    "userSays": [
+        {
+            "data": [
+                {
+                    "text": "How can I apply for admission?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "What is the admission process?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "How do I get admission?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Tell me the steps for admission."
+                }
+            ]
+        }
+    ]
+}

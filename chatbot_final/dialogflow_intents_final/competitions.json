@@ -1,0 +1,14 @@
+{
+    "name": "competitions",
+    "contexts": [
+        "competition_details"
+    ],
+    "trainingPhrases": [
+        "Are there any competitions for students?",
+        "What kind of contests does the college have?",
+        "Tell me about academic and sports competitions."
+    ],
+    "responses": [
+        "We organize various academic, sports, and technical competitions. You can check the student portal for upcoming contests. Do you need more details?"
+    ]
+}

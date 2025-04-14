@@ -1,0 +1,5 @@
+pip install flask
+pip install google-cloud-dialogflow
+
+following code to be included in index.htmml to integrate dialogflow  chatbot:
+<iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/433063af-514e-4d34-90e7-cce5d0ca7412"></iframe>
