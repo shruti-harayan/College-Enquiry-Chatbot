@@ -43,6 +43,8 @@ def chatbot():
         response = detect_intent(session_id, text)  
         return jsonify({"response": response})  
     except Exception as e:
+        import traceback
+        traceback.print_exc()  # This will print the full stack trace in the logs
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
