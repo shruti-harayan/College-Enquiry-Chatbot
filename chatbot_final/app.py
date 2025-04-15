@@ -10,16 +10,12 @@ session_client = dialogflow.SessionsClient(credentials=credentials)
 
 def detect_intent(session_id, text):
     """Send user text to Dialogflow and get a response."""
-    project_id = "collegeenquirybot-tgmk"  # Replace with your actual Dialogflow project ID
-    session_client = dialogflow.SessionsClient()
-
+    project_id = "collegeenquirybot-tgmk" 
     session = session_client.session_path(project_id, session_id)
     text_input = dialogflow.TextInput(text=text, language_code="en")
     query_input = dialogflow.QueryInput(text=text_input)
-
     response = session_client.detect_intent(session=session, query_input=query_input)
-    
-    return response.query_result.fulfillment_text  
+    return response.query_result.fulfillment_text
 
 @app.route("/")
 def home():
