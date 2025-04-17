@@ -1,0 +1,14 @@
+{
+    "name": "semester_end_exam",
+    "contexts": [
+        "exam_schedule"
+    ],
+    "trainingPhrases": [
+        "When are the semester exams held?",
+        "What is the schedule for term-end exams?",
+        "Tell me about the final exams."
+    ],
+    "responses": [
+        "Semester-end exams are conducted in December and May. The exact schedule is available on the student portal. Do you need help accessing it?"
+    ]
+}

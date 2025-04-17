@@ -1,0 +1,40 @@
+{
+    "name": "sports_facilities",
+    "auto": true,
+    "contexts": [
+        "sports_info"
+    ],
+    "responses": [
+        {
+            "messages": [
+                {
+                    "speech": "Our college has a gym, football field, basketball court, and indoor sports facilities. Would you like to join a sports club?",
+                    "type": 0
+                }
+            ]
+        }
+    ],
+    "userSays": [
+        {
+            "data": [
+                {
+                    "text": "What sports facilities are available?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Does the college have a gym?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Are there any sports teams in college?"
+                }
+            ]
+        }
+    ]
+}

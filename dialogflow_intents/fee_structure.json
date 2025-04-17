@@ -1,0 +1,47 @@
+{
+    "name": "fee_structure",
+    "auto": true,
+    "contexts": [
+        "fees_info"
+    ],
+    "responses": [
+        {
+            "messages": [
+                {
+                    "speech": "The tuition fee for B.Tech is approximately \u20b91,00,000 per year. Fees may vary based on scholarships. Would you like details on scholarships or installment options?",
+                    "type": 0
+                }
+            ]
+        }
+    ],
+    "userSays": [
+        {
+            "data": [
+                {
+                    "text": "What is the fee for B.Tech?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "How much does MBA cost?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Tell me the fee details."
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "What are the tuition fees?"
+                }
+            ]
+        }
+    ]
+}

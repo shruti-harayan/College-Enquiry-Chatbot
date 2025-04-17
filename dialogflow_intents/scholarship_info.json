@@ -1,0 +1,40 @@
+{
+    "name": "scholarship_info",
+    "auto": true,
+    "contexts": [
+        "scholarship_details"
+    ],
+    "responses": [
+        {
+            "messages": [
+                {
+                    "speech": "Yes, we offer merit-based and need-based scholarships. Eligibility depends on academic performance and entrance exam scores. Do you want to apply?",
+                    "type": 0
+                }
+            ]
+        }
+    ],
+    "userSays": [
+        {
+            "data": [
+                {
+                    "text": "Are there any scholarships?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Do you provide financial aid?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "What are the eligibility criteria for scholarships?"
+                }
+            ]
+        }
+    ]
+}

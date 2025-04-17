@@ -1,0 +1,40 @@
+{
+    "name": "campus_facilities",
+    "auto": true,
+    "contexts": [
+        "facilities_info"
+    ],
+    "responses": [
+        {
+            "messages": [
+                {
+                    "speech": "Our campus has modern classrooms, a library, sports facilities, labs, and a cafeteria. Would you like a campus tour?",
+                    "type": 0
+                }
+            ]
+        }
+    ],
+    "userSays": [
+        {
+            "data": [
+                {
+                    "text": "What facilities does the college have?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Is there a library on campus?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Tell me about the campus infrastructure."
+                }
+            ]
+        }
+    ]
+}

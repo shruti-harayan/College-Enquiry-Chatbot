@@ -1,0 +1,14 @@
+{
+    "name": "refund_policy",
+    "contexts": [
+        "fee_refund"
+    ],
+    "trainingPhrases": [
+        "What is the refund policy for tuition fees?",
+        "Can I get a refund if I withdraw from the college?",
+        "How does the tuition refund process work?"
+    ],
+    "responses": [
+        "The refund policy varies based on the time of withdrawal. Please refer to the official college guidelines or contact the finance office for details."
+    ]
+}

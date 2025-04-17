@@ -1,0 +1,40 @@
+{
+    "name": "online_courses",
+    "auto": true,
+    "contexts": [
+        "online_courses_info"
+    ],
+    "responses": [
+        {
+            "messages": [
+                {
+                    "speech": "Yes, we offer online courses in various subjects. You can check the online learning portal for details. Would you like the course list?",
+                    "type": 0
+                }
+            ]
+        }
+    ],
+    "userSays": [
+        {
+            "data": [
+                {
+                    "text": "Do you offer online courses?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "Can I take classes online?"
+                }
+            ]
+        },
+        {
+            "data": [
+                {
+                    "text": "What online learning options are available?"
+                }
+            ]
+        }
+    ]
+}
