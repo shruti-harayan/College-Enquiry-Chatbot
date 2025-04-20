@@ -43,6 +43,14 @@ def chatbot():
         traceback.print_exc()  # This will print the full stack trace in the logs
         return jsonify({"error": str(e)}), 500
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/admission')
+def admission():
+    return render_template('admission.html')
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
     
