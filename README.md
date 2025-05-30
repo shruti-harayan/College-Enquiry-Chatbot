@@ -31,8 +31,8 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 | Frontend       | HTML, CSS, JavaScript |
 | Backend        | Python (Flask)      |
 | NLP Engine     | Google Dialogflow   |
-| Deployment     | Google Cloud App Engine (or Render) |
-| API Comm.      | RESTful API (AJAX)  |
+| Deployment     | Railway |
+| API Comm.      | Dialogflow API  |
 
 ---
 
@@ -42,7 +42,7 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 - Context-aware follow-up questions using Dialogflow
 - Simple and clean frontend chat interface
 - Easy backend integration using Flask
-- Deployable on cloud platforms (Google Cloud App Engine)
+- Deployable on cloud platforms like Google Cloud App Engine or Railway.
 
 ---
 
@@ -62,9 +62,8 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 > _📸 Add screenshots of your frontend interface, Dialogflow agent, and cloud deployment here._
 
 ```bash
-[ Add screenshots like this: ]
+📍 Chatbot UI
 
-📍 Chatbot UI  
 📍 Dialogflow Intents Setup  
 📍 Response from Dialogflow  
 📍 Hosted Web App on Google Cloud
@@ -74,11 +73,10 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 
 ## 👩‍💻 My Role in the Project
 
-- 🛠 **Full-Stack Developer**
+- 🛠 **Back-end Developer**
     - Built the complete backend using **Flask** to handle chat requests.
     - Integrated the chatbot with **Dialogflow** using `google-cloud-dialogflow` SDK.
-    - Designed the frontend with **HTML/CSS/JavaScript** to enable real-time chatting.
-    - Configured cloud deployment using **Google App Engine** and **environment variables** securely.
+    - Configured cloud deployment using **Railway.app** and **environment variables** securely.
     - Trained Dialogflow agent with **multiple intents**, **entities**, and **contexts** for dynamic responses.
     - Wrote fallback and follow-up intent logic to maintain conversation flow.
 
@@ -113,20 +111,10 @@ export GOOGLE_APPLICATION_CREDENTIALS='PASTE_YOUR_JSON_STRING_HERE'
 python app.py
 ```
 
-### ☁️ Deployment (Google App Engine)
+### ☁️ Deployment (Railway)
 
 ```bash
-# Install Google Cloud SDK and login
-gcloud init
 
-# Create App Engine instance
-gcloud app create --region=us-central
-
-# Deploy the app
-gcloud app deploy
-
-# Open in browser
-gcloud app browse
 ```
 
 ---
