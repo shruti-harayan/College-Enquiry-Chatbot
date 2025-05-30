@@ -6,15 +6,15 @@ This project is a smart **College Enquiry Chatbot** built using **Google Dialogf
 
 ## 📌 Table of Contents
 
-- [Overview](#overview)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Screenshots](#screenshots)
-- [Installation & Deployment](#installation--deployment)
-- [My Role in the Project](#my-role-in-the-project)
-- [Roadmap or Improvements](#roadmap-or-improvements)
-- [License](#license)
+- [Overview](#-overview)
+- [Tech Stack](#-tech-stack)
+- [Features](#-features)
+- [How It Works](#-how-it-works)
+- [Screenshots](#-screenshots)
+- [Installation & Deployment](#-installation--deployment)
+- [My Role in the Project](#-my-role-in-the-project)
+- [Roadmap or Improvements](#-roadmap-or-improvements)
+- [License](#-license)
 
 ---
 
@@ -59,15 +59,14 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 
 ## 🖼 Screenshots
 
-```bash
+
 ![Chatbot UI](https://github.com/user-attachments/assets/b053b297-fdd3-475b-bed6-c0177d1e72f8)
 
-![Dialogflow Intents Setup](https://github.com/user-attachments/assets/1995489b-a5d5-424b-a18f-bf2b0172284a)
-(https://github.com/user-attachments/assets/e0d48823-d7c6-4a3c-a6ac-6269e0905f6e)
+![Dialogflow Intents Setup](https://github.com/user-attachments/assets/1995489b-a5d5-424b-a18f-bf2b0172284a) 
+![Dialogflow Intents Setup](https://github.com/user-attachments/assets/e0d48823-d7c6-4a3c-a6ac-6269e0905f6e)
  
 ![Hosted Web App on railway](https://github.com/user-attachments/assets/b0a0542d-11b2-4fc1-b98d-2d3e1d30f997)
 
-```
 
 ---
 
