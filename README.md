@@ -32,7 +32,7 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 | Backend        | Python (Flask)      |
 | NLP Engine     | Google Dialogflow   |
 | Deployment     | Railway |
-| API Comm.      | Dialogflow API  |
+| API Communication  | Dialogflow <-> Flask (via HTTP requests)  |
 
 ---
 
@@ -63,10 +63,16 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 
 ```bash
 📍 Chatbot UI
+![Screenshot 2025-05-05 192002](https://github.com/user-attachments/assets/b053b297-fdd3-475b-bed6-c0177d1e72f8)
 
-📍 Dialogflow Intents Setup  
-📍 Response from Dialogflow  
-📍 Hosted Web App on Google Cloud
+📍 Dialogflow Intents Setup
+<img width="406" alt="image" src="https://github.com/user-attachments/assets/947521d5-1c63-4e69-840e-ffa306a68640" />
+<img width="167" alt="image" src="https://github.com/user-attachments/assets/505bf0df-1d06-4bb9-880a-f80624b784cb" />
+
+ 
+📍 Hosted Web App on railway
+![Screenshot 2025-05-05 191941](https://github.com/user-attachments/assets/b0a0542d-11b2-4fc1-b98d-2d3e1d30f997)
+
 ```
 
 ---
@@ -104,29 +110,19 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Set GOOGLE_APPLICATION_CREDENTIALS as a JSON string (or use file method)
-export GOOGLE_APPLICATION_CREDENTIALS='PASTE_YOUR_JSON_STRING_HERE'
+### Dialogflow Key Setup
+Store your service account JSON content in a secure environment variable:
+GOOGLE_APPLICATION_CREDENTIALS = <paste JSON content here securely as an env variable>
 
 # Run Flask app
 python app.py
 ```
 
-### ☁️ Deployment (Railway)
-
-```bash
-
-```
-
----
-
-## 🔮 Future Improvements
-
-- ✅ Improve UI/UX using React or Bootstrap.
-- ✅ Add multilingual support.
-- ✅ Store chat logs in a database.
-- ✅ Use voice input/output.
-- ✅ Integrate with the official college website.
-- ✅ Handle authentication for student-specific queries.
+## 🚀 Roadmap / Improvements
+> - Enhancing front-end UI for a more user-friendly experience.
+> - Expanding query coverage with follow-up intents.
+> - Integration with a full-featured college website.
+> - Adding voice input capabilities.
 
 ---
 
