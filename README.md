@@ -14,7 +14,7 @@ This project is a smart **College Enquiry Chatbot** built using **Google Dialogf
 - [Installation & Deployment](#installation--deployment)
 - [My Role in the Project](#my-role-in-the-project)
 - [Future Improvements](#future-improvements)
-- [License](#license)
+- [License](##license)
 
 ---
 
@@ -62,16 +62,12 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 > _📸 Add screenshots of your frontend interface, Dialogflow agent, and cloud deployment here._
 
 ```bash
-📍 Chatbot UI
-![Screenshot 2025-05-05 192002](https://github.com/user-attachments/assets/b053b297-fdd3-475b-bed6-c0177d1e72f8)
+📍 [Chatbot UI](https://github.com/user-attachments/assets/b053b297-fdd3-475b-bed6-c0177d1e72f8)
 
-📍 Dialogflow Intents Setup
-<img width="406" alt="image" src="https://github.com/user-attachments/assets/947521d5-1c63-4e69-840e-ffa306a68640" />
-<img width="167" alt="image" src="https://github.com/user-attachments/assets/505bf0df-1d06-4bb9-880a-f80624b784cb" />
-
+📍[Dialogflow Intents Setup](https://github.com/user-attachments/assets/1995489b-a5d5-424b-a18f-bf2b0172284a)
+(https://github.com/user-attachments/assets/e0d48823-d7c6-4a3c-a6ac-6269e0905f6e)
  
-📍 Hosted Web App on railway
-![Screenshot 2025-05-05 191941](https://github.com/user-attachments/assets/b0a0542d-11b2-4fc1-b98d-2d3e1d30f997)
+📍 [Hosted Web App on railway](https://github.com/user-attachments/assets/b0a0542d-11b2-4fc1-b98d-2d3e1d30f997)
 
 ```
 
