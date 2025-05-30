@@ -63,7 +63,6 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 ![Chatbot UI](https://github.com/user-attachments/assets/b053b297-fdd3-475b-bed6-c0177d1e72f8)
 
 ![Dialogflow Intents Setup](https://github.com/user-attachments/assets/1995489b-a5d5-424b-a18f-bf2b0172284a) 
-![Dialogflow Intents Setup](https://github.com/user-attachments/assets/e0d48823-d7c6-4a3c-a6ac-6269e0905f6e)
  
 ![Hosted Web App on railway](https://github.com/user-attachments/assets/b0a0542d-11b2-4fc1-b98d-2d3e1d30f997)
 
@@ -111,7 +110,7 @@ GOOGLE_APPLICATION_CREDENTIALS = <paste JSON content here securely as an env var
 python app.py
 ```
 
-## 🚀 Roadmap / Improvements
+## 🚀 Roadmap 0r Improvements
 > - Enhancing front-end UI for a more user-friendly experience.
 > - Expanding query coverage with follow-up intents.
 > - Integration with a full-featured college website.
