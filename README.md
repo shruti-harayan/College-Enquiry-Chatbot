@@ -9,7 +9,7 @@ This project is a smart **College Enquiry Chatbot** built using **Google Dialogf
 - [Overview](#-overview)
 - [Tech Stack](#-tech-stack)
 - [Features](#-features)
-- [How It Works](#-how-it-works)
+- [How It Works](#how-it-works)
 - [Screenshots](#-screenshots)
 - [Installation & Deployment](#-installation--deployment)
 - [My Role in the Project](#-my-role-in-the-project)
@@ -46,7 +46,7 @@ The chatbot uses **Dialogflow** to understand user queries through NLP and respo
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. User types a question on the chatbot interface.
 2. The frontend sends the question to the Flask backend.
@@ -110,7 +110,7 @@ GOOGLE_APPLICATION_CREDENTIALS = <paste JSON content here securely as an env var
 python app.py
 ```
 
-## 🚀 Roadmap 0r Improvements
+## 🚀 Roadmap or Improvements
 > - Enhancing front-end UI for a more user-friendly experience.
 > - Expanding query coverage with follow-up intents.
 > - Integration with a full-featured college website.
